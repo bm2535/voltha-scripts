@@ -1,0 +1,13 @@
+[Unit]
+Description = VOLTHA daemon
+
+[Service]
+User=opencord
+Group=opencord
+Type=forking
+ExecStart=/usr/local/bin/voltha/voltha.sh start
+ExecStop=/usr/local/bin/voltha/voltha.sh stop
+ExecReload=/usr/local/bin/voltha/voltha.sh reload
+
+[Install]
+WantedBy=multi-user.target

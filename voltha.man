@@ -1,0 +1,21 @@
+Usage: ./voltha.sh [OPTION]
+	OPTIONS:
+		Service Controls:
+			start	 			-	Starts All Services
+			stop 	 			-	Stops All Services
+			reload 				-  	Restarts All Services
+			status 				- 	Provides status of All Services
+			installservice			-	Creates a systemctl daemon service (Not Working)
+			
+		Testing Tools:
+			test 	 			-  	Creates PON Simulation
+			stoptest			-	Stops PON Simulation
+			  
+			
+		Utilities:
+			clean 				- 	Cleans up files related to runtime
+			kafkacat 			- 	Shows output of Kafka Queues
+			getlinks			-	Shows web reources used for the suite
+
+		Consoles:
+			onos				-	access to ONOS Console

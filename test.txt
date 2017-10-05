@@ -1,0 +1,6 @@
+preprovision_olt -t ponsim_olt -H 172.17.0.1:50060
+enable
+logical_devices
+devices
+quit
+
