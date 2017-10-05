@@ -101,7 +101,6 @@ function v_test()
 		echo "Test is already running"
 		exit 0
 	fi
-	sudo su
 	cd /cord/incubator/voltha
 	. env.sh
 	./ponsim/main.py -q -o 4 &
@@ -111,7 +110,6 @@ function v_test()
 	brctl show ponmgmt
 	echo "Setting up test"
 	cat /usr/local/bin/voltha/test.txt |./cli/main.py -L
-	su - opencord
 	exit 0
 }
 
